@@ -1,0 +1,119 @@
+/* Estilos gerais */
+
+body {
+    font: 18px/1.4 Arial, sans-serif;
+    color: #333;
+    background-color: #e0f7fa; 
+}
+
+header.topo {
+    background-color: #004d40; 
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilo para o rodapé */
+div.rodape {
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+hgroup > h1 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+hgroup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 ~ h2 {
+    font-size: 27px;
+    margin: 14px 0;
+    color: #b2dfdb;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #b2dfdb; 
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #004d40; 
+    text-decoration: underline;
+}
+
+section.conteudo {
+    padding: 20px;
+}
+
+h2 {
+    color: #004d40;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    color: #00796b;
+}
+
+img {
+    max-width: 100%; 
+    height: 150px;    
+    display: block;  
+    margin: 0 auto;  
+}
+
+.conteudo img {
+    border-radius: 8px; 
+    border: 2px solid #b2dfdb;
+    margin-bottom: 20px; 
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #b2dfdb;
+}
+
+.stylized-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.stylized-text span {
+    display
+}

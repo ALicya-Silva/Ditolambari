@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Comidas Típicas Cuiabanas</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="home">
+    <header class="topo">
+        <div class="container">
+            <hgroup>
+                <h1><a href="/">Comidas Típicas Cuiabanas</a></h1>
+                <h2>Descubra os sabores Cuiabanos</h2>
+            </hgroup>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link corrente" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#receitas">Receitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="conteudo container">
+        <h2>Pratos Típicos de Cuiabá</h2>
+        
+        <!-- Imagem e texto estilizado -->
+        <div class="image-container">
+            <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2023/02/24/167432687-peixe-pargo-assado.jpg" alt="Deliciosos Sabores">
+            <h3 class="stylized-text">
+                <span class="text1">Deliciosos</span>
+                <span class="text2">Sabores</span>
+                <span class="text3">Para</span>
+                <span class="text4">Você</span>
+                <span class="text5">Saborear</span>
+            </h3>
+        </div>
+        
+        <div class="mb-4">
+            <h3>Paçoca de Carne Seca</h3>
+            <p>A paçoca é um prato tradicional cuiabano feito com carne seca desfiada e misturada com farinha de mandioca. É geralmente servido com arroz e feijão.</p>
+            <img src="https://imgs.search.brave.com/fAsxTSpSXij8hfswJDzma9EPM7BxvVqJtagu1iSBbw0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXN0YWRhby5jb20u/YnIvcmVzaXplci92/Mi9VM1VFUEhTRFlG/TjdOQ1NPQzJSNkpa/WkdMUS5qcGc_cXVh/bGl0eT04MCZhdXRo/PWQ2MzMzOWQ2MDU4/MjlhMDJhZWJjYWJm/NzMzYjg1YTk2MDE5/NmI2Y2U2ZDIyNDEw/ZTg5NTA1ZjAyZTBl/NTFmMzcmd2lkdGg9/NzIwJmhlaWdodD01/MDMmc21hcnQ9dHJ1/ZQ" alt="Paçoca de Carne Seca">
+        </div>
+
+        <div class="mb-4">
+            <h3>Arroz com Pequi</h3>
+            <p>O arroz com pequi é um prato típico da região Centro-Oeste, com um sabor marcante proporcionado pelo pequi, um fruto nativo da região.</p>
+            <img src="https://acozinhabrasileira.com.br/wp-content/uploads/2021/09/receita-de-arroz-com-pequi.jpg" alt="Arroz com Pequi">
+        </div>
+
+        <div class="mb-4">
+            <h3>Feijão Tropeiro</h3>
+            <p>Feijão tropeiro é um prato rico e saboroso, feito com feijão, carne seca, bacon e farofa, frequentemente acompanhado de arroz.</p>
+            <img src="https://static.itdg.com.br/images/360-240/964eb2e9d426c362f2204212f96e3a98/shutterstock-2059004348.jpg" alt="Feijão Tropeiro">
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="conteudo container">
+        <h2>Sobre Nós</h2>
+        <p>No <strong>Dito Lambari Cuiabano</strong>, trazemos à mesa o verdadeiro sabor de Cuiabá. Nosso cardápio é uma homenagem às tradições culinárias da região, com pratos como o arroz com pequi, Paçoca de carne seca e o feijão tropeiro, preparados com ingredientes frescos e locais.</p>
+        <p>Desde <strong>2023</strong>, nosso objetivo é oferecer uma experiência autêntica, em um ambiente acolhedor que reflete a cultura mato-grossense. Venha nos visitar e descubra o sabor e a hospitalidade de Cuiabá em cada refeição.</p>
+    </section>
+
+    <!-- Seção Contatos -->
+    <section id="contato" class="contatos container">
+        <h2>Contatos</h2>
+        <p>Email: <a href=>ditolambari@ditinho.com.br</a></p>
+        <p>Telefone: (65) 92345-6789</p>
+        <p>Localização: Mato Grosso, MT</p>
+    </section>
+
+    <div class="rodape">
+       <p>2024 Comidas Típicas Cuiabanas - IFMT</p>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function(){
+            // Destacar a aba corrente
+            $('nav a').each(function(){
+                if(this.href == window.location.href){
+                    $(this).addClass('active');
+                }
+            });
+
+            // Mostrar/esconder informações adicionais na seção "Sobre"
+            $('#toggle-info').click(function(){
+                $('#extra-info').toggle();
+                $(this).text(function(i, text){
+                    return text === "Mostrar Mais" ? "Mostrar Menos" : "Mostrar Mais";
+                })
+            });
+        });
+    </script>
+</body>
+</html>
